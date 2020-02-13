@@ -4,39 +4,35 @@ class wComp():     # Dr. wang start up a bioinfor com.
         self.name = band
         self.code = bioinfor            # he will send code to bioinfor
         self.money = sale               # he will get money by sale
-        print (band, "established !")
-        print (band,"bioinfor ready by", bioinfor,": plat runing")          # now he talk to investor bioinfor ready.
-        print (band,"sale ready by", self.money, ": money coming in")       # now he talk to himself money will come.
+        print ("#",band, "established !")
+        print ("#",band,"bioinfor ready by", bioinfor,": plat runing")          # now he talk to investor bioinfor ready.
+        print ("#",band,"sale ready by", self.money, ": money coming in")       # now he talk to himself money will come.
     def ngslab (self, ngs):         # some time later he might need to find people build ngs wet-lab for this company
-        print (self.name, "NGS contained by ", ngs,": read produced")
+        print ("#",self.name, "NGS contained by ", ngs,": read produced")
     def Immlab (self, imm):         # some time market he might need to find people build immune  wet-lab as well for this company.
-        print ( self.name, "imm contained by", imm,": index is good")
+        print ( "#",self.name, "imm contained by", imm,": index is good")
 
 
-print("start to build up\n")
+print("#start to build up\n")
 
 OriBio = wComp("QG", "LQ","OriOriBio")
 OriBio.ngslab ("KHu")
 
-print("\none year later...\n")
+print("\n#one year later...\n")
 OriMed = wComp("LW","LR","OriOriMed")
 OriMed.Immlab("WF")
 
-print ("now he is free")
+print ("#now he is free")
 
 def sequencer (sample, reads ,name="Nova"):
     #name = "Novaseq"
-    print (sample, "produces", reads,"by", name)
+    print ("#",sample, "produces", reads,"by", name)
 def writer (poeple, paper, name = "Tim Wang"):
-    print (poeple ,"get" ,paper, "by" ,name )
+    print ("#",poeple ,"get" ,paper, "by" ,name )
 
-print ("\nwhen ngs problem comes")
+print ("\n#when ngs problem comes")
 sequencer(OriMed.name,"WES in 1k ")
 
-print ("\nwhen paper writing needed:")
+print ("\n#when paper writing needed:")
 writer (OriMed.money, "single cell report",  "M. Adnderson")
-
-
-# OriBio is an instance of 'wComp'
-# OriBio is a 'wComp' object
 
